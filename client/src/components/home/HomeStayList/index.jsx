@@ -5,7 +5,7 @@ import LazyLoadImage from "~/components/LazyLoadImage";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function HomeStayList(props) {
   return (
-    <Box mt={5}>
+    <Box>
       <Typography variant="h4" color="#003580">
         Tìm theo loại chỗ nghỉ
       </Typography>
@@ -80,10 +80,13 @@ function HomeStayList(props) {
           Xem thêm...
         </Button>
       </Typography>
-
+      <Typography variant="h4" mb={2} color="#003580">
+        Tải app khám phá thêm ưu đãi
+      </Typography>
       <img
         width="100%"
-        src="https://f10-zpcloud.zdn.vn/40855280047295177/e63a30caab2e7a70233f.jpg"
+        height="400"
+        src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/04/1683175669593-e3274699e922beede5ff0298ed40e52b.jpeg?tr=q-75,w-1280"
         alt="banner"
       />
     </Box>

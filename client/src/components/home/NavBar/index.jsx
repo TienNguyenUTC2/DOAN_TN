@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
+import Stack from "@mui/material/Stack";
 import { Link as RouterLink } from "react-router-dom";
 import AccountPopover from "~/layouts/dashboard/AccountPopover";
 import { useDispatch, useSelector } from "react-redux";
@@ -55,9 +56,24 @@ export default function NavBar() {
                 component={RouterLink}
                 to="/"
               >
-                <Typography variant="h4" component="div" fontWeight={700}>
-                  Endcool.booking
-                </Typography>
+                <Stack direction="row" spacing={2} mt={1}>
+                  <img
+                    width="60"
+                    height="60"
+                    src="https://cf.bstatic.com/static/img/favicon/9ca83ba2a5a3293ff07452cb24949a5843af4592.svg"
+                    alt=""
+                  />
+                  <Typography
+                    variant="h3"
+                    component="div"
+                    fontWeight={700}
+                    sx={{
+                      lineHeight: 2,
+                    }}
+                  >
+                    Booking.com
+                  </Typography>
+                </Stack>
               </Link>
             </Box>
 
@@ -70,7 +86,7 @@ export default function NavBar() {
                     sx={{ color: "inherit", textDecoration: "none" }}
                   >
                     <Button color="inherit" sx={{ mr: 1 }}>
-                      Đăng ký chỗ nghỉ của Quý vị
+                      Đăng chỗ nghỉ của Quý vị
                     </Button>
                   </Link>
                 ))}

@@ -99,9 +99,9 @@ function billHTML({
           role="presentation" width="100%">
           <tbody>
             <tr>
-              <td><img alt="Nike" src="https://react-email-demo-5x1tg9zg2-resend.vercel.app/static/nike-logo.png"
-                  width="66" height="22"
-                  style="display:block;outline:none;border:none;text-decoration:none;margin:auto" />
+              <td><img alt="logo" src="https://seeklogo.com/images/B/booking-com-logo-57323D83C0-seeklogo.com.png"
+                  width="80" height="80"
+                  style="display:block;outline:none;border:none;text-decoration:none;margin:auto;object-fit: cover" />
                 <h1 style="font-size:32px;line-height:1.3;font-weight:700;text-align:center;letter-spacing:-1px">Chi
                   tiết về đặt phòng</h1>
                 <p style="font-size:14px;line-height:2;margin:0;color:#747474;font-weight:500">Cảm ơn bạn đã đặt phòng

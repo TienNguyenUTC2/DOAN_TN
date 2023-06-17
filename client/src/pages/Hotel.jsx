@@ -194,9 +194,6 @@ function Hotel(props) {
                     flexBasis: { md: "66.66667%", xs: "100%" },
                     width: { md: "66.66667%", xs: "100%" },
                     maxWidth: { md: "66.66667%", xs: "100%" },
-                    // display: "flex",
-                    // justifyContent: "space-between",
-                    // flexDirection: "column",
                   }}
                 >
                   <Typography variant="h5" mt={2}>
@@ -505,6 +502,7 @@ function Hotel(props) {
           )}
         </Container>
       )}
+
       <MailList />
       <Footer />
     </Page>

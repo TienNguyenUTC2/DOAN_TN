@@ -78,7 +78,9 @@ export const RegisterSchema = Yup.object().shape({
   email: Yup.string()
     .email("E-mail phải là một địa chỉ email hợp lệ")
     .required("E-mail là trường bắt buộc"),
-  password: Yup.string().required("Mật khẩu là trường bắt buộc"),
+  password: Yup.string()
+    .required("Mật khẩu là trường bắt buộc")
+    .min(8, "Mật khẩu tối thiểu 8 kí tự"),
   username: Yup.string().required("Tài khoản là trường bắt buộc"),
   phone: Yup.string()
     .matches(phoneRegExp, "Số điện thoại không hợp lệ.")

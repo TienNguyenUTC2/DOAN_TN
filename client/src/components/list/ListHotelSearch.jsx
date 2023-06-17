@@ -41,7 +41,7 @@ function ListHotelSearch({ date, options, destination }) {
       } chỗ nghỉ`}</Typography>
 
       {isLoading
-        ? [1, 2, 3, 4, 5].map((i) => <LoadingHotel key={i} />)
+        ? [1, 2, 3].map((i) => <LoadingHotel key={i} />)
         : data.length
         ? data.map((item, index) => (
             <div key={index}>
@@ -128,7 +128,7 @@ function ListHotelSearch({ date, options, destination }) {
                         fontWeight={600}
                         color="#0071c2"
                         fontSize={12}
-                        sx={{ textDecoration: "underline" }}
+                        sx={{ textDecoration: "none" }}
                       >
                         {item.provice_name}
                       </Typography>
