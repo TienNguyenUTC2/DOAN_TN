@@ -36,7 +36,7 @@ const MainStyle = styled("div")(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function DashboardLayout() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const { accessToken } = useSelector(authState);
   const dispatch = useDispatch();
   const locations = useLocation();
@@ -63,7 +63,7 @@ export default function DashboardLayout() {
       />
       <DashboardSidebar
         isOpenSidebar={open}
-        onCloseSidebar={() => setOpen(false)}
+        onCloseSidebar={() => setOpen(true)}
       />
       <MainStyle>
         <Outlet />

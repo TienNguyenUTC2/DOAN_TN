@@ -1,8 +1,9 @@
 import { Box, Grid, Typography } from "@mui/material";
 import LazyLoadImage from "../../LazyLoadImage";
+import "./style.css";
 export default function PropertyList() {
   return (
-    <Box>
+    <Box mt={-6}>
       <Typography variant="h4" color="#003580">
         Điểm đến đang thịnh hành
       </Typography>
@@ -16,22 +17,34 @@ export default function PropertyList() {
             item
             md={6}
             sx={{ position: "relative", borderRadius: 1 }}
+            className="img-wrapper"
           >
             <LazyLoadImage
+              className="inner-img"
               alt={item.title}
               src={item.img}
               sx={{ maxHeight: 300, borderRadius: 1 }}
+              sxImage={{
+                borderRadius: "8px ",
+              }}
             />
             <Typography
+              className="testt"
               variant="h4"
               color="#fff"
               sx={{
                 position: "absolute",
                 top: 30,
                 left: 40,
+                display: "flex",
               }}
             >
               {item.city}
+              <img
+                className="flag"
+                width="40"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAulBMVEX///8AAAAAAAAAAAAAAAD//xT//xb/9Df/8jf/8Bn96Ub72Rn60Br4yVb4wjr3vTr1rBr0pRrxm2fwlZXxlmjymyDvjo7xliDxkxrwjhruhITtf4DreXnseHbsdXbpamrpaFDpY2vpZVDoX1/nWlroW1DoXiDnV0LmUl7mVELnUVHmUSHjTU3hSUnlQ0PfQ0PcPDzZOTnjNx7jNB7iMDDhLijWMDDgKCjUKirfIijfICDWISHPICDeFyFRpPkZAAAABXRSTlMAESIzRJTdRHwAAADMSURBVBgZrcHBSsNAFIbR7975J4GmIIIg3Unpxvd/Hd24EhELFaRNnBlnkp3NRvAc+DeGsaaYPY6seJaNR67dmuhC5LcJBAosCsaidAh3Y+af+SYzcxAWRGXonf6bQuMIVw9MUxwT55hCpDIEvYDydrbCK91OVI6wrgeG7cvJYPugDFzAMVFl7UNKvlemkuFEvNHpshnGo7wBBBjNx92Bp9O90USEF5q0GxKHr0RjjoMzGxKkDTMHoSnRJKrEIiCIrDFz41rJhrGm8Gc/DBY3JYgAKsIAAAAASUVORK5CYII="
+              ></img>
             </Typography>
           </Grid>
         ))}
@@ -43,11 +56,16 @@ export default function PropertyList() {
             item
             md={4}
             sx={{ position: "relative", borderRadius: 1 }}
+            className="image-wraper-small"
           >
             <LazyLoadImage
               alt={item.title}
               src={item.img}
               sx={{ maxHeight: 300, borderRadius: 1 }}
+              className="inner-image-small"
+              sxImage={{
+                borderRadius: "8px",
+              }}
             />
             <Typography
               variant="h4"
@@ -56,9 +74,15 @@ export default function PropertyList() {
                 position: "absolute",
                 top: 30,
                 left: 40,
+                display: "flex",
               }}
             >
               {item.city}
+              <img
+                className="flag"
+                width="40"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAulBMVEX///8AAAAAAAAAAAAAAAD//xT//xb/9Df/8jf/8Bn96Ub72Rn60Br4yVb4wjr3vTr1rBr0pRrxm2fwlZXxlmjymyDvjo7xliDxkxrwjhruhITtf4DreXnseHbsdXbpamrpaFDpY2vpZVDoX1/nWlroW1DoXiDnV0LmUl7mVELnUVHmUSHjTU3hSUnlQ0PfQ0PcPDzZOTnjNx7jNB7iMDDhLijWMDDgKCjUKirfIijfICDWISHPICDeFyFRpPkZAAAABXRSTlMAESIzRJTdRHwAAADMSURBVBgZrcHBSsNAFIbR7975J4GmIIIg3Unpxvd/Hd24EhELFaRNnBlnkp3NRvAc+DeGsaaYPY6seJaNR67dmuhC5LcJBAosCsaidAh3Y+af+SYzcxAWRGXonf6bQuMIVw9MUxwT55hCpDIEvYDydrbCK91OVI6wrgeG7cvJYPugDFzAMVFl7UNKvlemkuFEvNHpshnGo7wBBBjNx92Bp9O90USEF5q0GxKHr0RjjoMzGxKkDTMHoSnRJKrEIiCIrDFz41rJhrGm8Gc/DBY3JYgAKsIAAAAASUVORK5CYII="
+              ></img>
             </Typography>
           </Grid>
         ))}

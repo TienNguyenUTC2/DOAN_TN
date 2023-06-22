@@ -246,8 +246,8 @@ function Hotel(props) {
                     <Stack direction="row" mt={2}>
                       <LocationOnIcon fontSize="20" color="primary" />
                       <Typography fontSize={14}>
-                        Nằm tại khu vực được đánh giá cao nhất ở Hội An, khách
-                        sạn này có điểm vị trí xuất sắc 9,3
+                        Nằm tại khu vực được đánh giá cao nhất, khách sạn này có
+                        điểm vị trí xuất sắc 9,3
                       </Typography>
                     </Stack>
 
@@ -471,6 +471,15 @@ function Hotel(props) {
                             spacing={1}
                           >
                             <Button
+                              fullWidth
+                              variant="contained"
+                              color="error"
+                              sx={{ borderRadius: "2px" }}
+                              onClick={() => handleCancle(room)}
+                            >
+                              Huỷ
+                            </Button>
+                            <Button
                               disabled={
                                 selectedRooms[room.room_id]?.room_id ===
                                 room.room_id
@@ -481,16 +490,6 @@ function Hotel(props) {
                               onClick={() => handleSelectedRooms(room)}
                             >
                               Chọn
-                            </Button>
-
-                            <Button
-                              fullWidth
-                              variant="contained"
-                              color="error"
-                              sx={{ borderRadius: "2px" }}
-                              onClick={() => handleCancle(room)}
-                            >
-                              Huỷ
                             </Button>
                           </Stack>
                         </Paper>

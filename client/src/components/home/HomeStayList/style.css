@@ -1,0 +1,8 @@
+.image {
+  object-fit: cover;
+  transition: all linear 0.3s;
+}
+.image:hover {
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}

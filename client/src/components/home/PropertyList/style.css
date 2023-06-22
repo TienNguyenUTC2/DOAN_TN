@@ -1,0 +1,29 @@
+.inner-img {
+  transition: all 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.img-wrapper:hover .inner-img {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.flag {
+  margin-left: 15px;
+  margin-top: -4px;
+  object-fit: cover;
+}
+.image-wraper-small {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.inner-image-small {
+  width: 100%;
+  border-radius: 10px;
+  transition: all linear 0.1s;
+  object-fit: cover;
+}
+
+.inner-image-small:hover {
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}

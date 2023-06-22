@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Box, Grid, Typography, Stack, Rating, Button } from "@mui/material";
 import LazyLoadImage from "~/components/LazyLoadImage";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "./style.css";
 function HomeStayList(props) {
   return (
     <Box>
@@ -14,19 +15,25 @@ function HomeStayList(props) {
         {itemData.map((item, index) => (
           <Grid item xs={6} md={3} key={index}>
             <LazyLoadImage
+              className="image"
               src={item.img}
               alt={item.title}
               sx={{
-                borderRadius: "4px",
+                borderRadius: "8px",
                 display: "flex",
                 flexDirection: "column",
                 boxShadow: 2,
+              }}
+              sxImage={{
+                borderRadius: "8px 8px 0px 0px",
+                minHeight: 250,
+                maxHeight: 300,
               }}
             >
               <Typography pl={2} fontWeight={700} mt={1} color="#003580">
                 {item.city}
               </Typography>
-              <Typography pl={2} pb={1} variant="caption">
+              <Typography pl={2} pb={1} variant="body2">
                 {item.quantity} chỗ nghỉ
               </Typography>
             </LazyLoadImage>
@@ -49,6 +56,11 @@ function HomeStayList(props) {
                 display: "flex",
                 flexDirection: "column",
                 boxShadow: 2,
+              }}
+              sxImage={{
+                borderRadius: "4px 4px 0px 0px",
+                minHeight: 250,
+                maxHeight: 300,
               }}
             >
               <Typography pl={2} fontWeight={700} mt={1} color="#003580">

@@ -69,17 +69,18 @@ function DiscoverVietnam({ onClick }) {
                   borderRadius: "4px",
                   display: "flex",
                   flexDirection: "column",
+                  objectFit: "cover",
                 }}
                 sxImage={{
                   borderRadius: "2px",
-                  minHeight: 200,
+                  minHeight: 250,
                   maxHeight: 300,
                 }}
               >
                 <Typography fontWeight={700} mt={1} color="#003580">
                   {item.provice_name}
                 </Typography>
-                <Typography variant="caption">{`${item.total} chỗ nghỉ`}</Typography>
+                <Typography variant="body2">{`${item.total} chỗ nghỉ`}</Typography>
               </LazyLoadImage>
             </SwiperSlide>
           ))}

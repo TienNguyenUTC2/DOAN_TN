@@ -32,8 +32,8 @@ function VNPayReturn(props) {
               elevation={24}
               sx={{
                 borderRadius: "2px",
-                minWidth: 300,
-                minHeight: 300,
+                minWidth: 700,
+                minHeight: 350,
                 transition: "all .25s ease",
                 "&:hover": {
                   boxShadow:
